@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Car Info</title>
+</head>
+<body>
+    <h1>Car Details</h1>
+    <% if (car) { %>
+        <p>Make: <%= car.make %></p>
+        <p>Model: <%= car.model %></p>
+        <p>Year: <%= car.year %></p>
+        <!-- Add more fields as necessary -->
+    <% } else { %>
+        <p>No details found for this car.</p>
+    <% } %>
+    <a href="/">Back</a>
+</body>
+</html>
